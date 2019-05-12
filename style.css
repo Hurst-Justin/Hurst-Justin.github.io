@@ -1,0 +1,21 @@
+table {
+    margin-left:auto; 
+    margin-right:auto;
+	border: 2px solid grey;
+	border-collapse: collapse;
+
+}
+
+thead, tfoot {
+	background-color: #009DD9;
+	font-size: 1.25rem;
+}
+
+td, th {
+	text-align: center;
+	border: 1px solid grey;
+	padding: 20px;
+}
+
+.blueCentered{color: #009dd9;text-align:center;}
+.centered{text-align:center;}
