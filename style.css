@@ -8,13 +8,13 @@ table {
 
 thead, tfoot {
 	background-color: #009DD9;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 
 td, th {
 	text-align: center;
 	border: 1px solid grey;
-	padding: 10px 30px;
+	padding: 15px 30px;
 }
 
 .blueCentered{color: #009dd9;text-align:center;}
