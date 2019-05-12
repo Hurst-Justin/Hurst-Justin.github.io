@@ -14,7 +14,7 @@ thead, tfoot {
 td, th {
 	text-align: center;
 	border: 1px solid grey;
-	padding: 20px;
+	padding: 10px 30px;
 }
 
 .blueCentered{color: #009dd9;text-align:center;}
