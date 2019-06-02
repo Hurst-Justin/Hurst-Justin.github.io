@@ -41,27 +41,20 @@ function getArray() {
 	var arraySize = parseInt(prompt("How many numbers would you like in the array?"));
 
 	if (isNaN(arraySize)) {
-		document.getElementById("arrayOutput").innerHTML = "Error: Invalid input. Please try again";
+		document.getElementById("arrayOutput").innerHTML = "Error: Invalid input.";
 	} else {
 		var list = createArray(arraySize);
 	}
 
-	var sortedArray = sortArray(list);
-	var midValue = getMid(list);
-	var range = getRange(list);
+	document.getElementById("arrayOutput").innerHTML = "Values entered into the array: " + "[" + list + "]";
 
-	document.getElementById("arrayOutput").innerHTML = "Sorted array of values: " + "[" + sortedArray + "]";
-	document.getElementById("midOutput").innerHTML = "Middle integer: " + midValue;
-	document.getElementById("rangeOutput").innerHTML = "Range of values: " + range;
 }
 
 function createArray(arraySize){
 	var i = 0;
 	var list = [];
-
 	do {
-		var inputArray = parseFloat(prompt("Enter an integer."));
-
+		var inputArray = parseFloat(prompt("Please enter an integer."));
 		if (isNaN(inputArray)) {
 			break;
 		} else {
@@ -69,54 +62,8 @@ function createArray(arraySize){
 			i++;
 		}
 	} while (i < arraySize);
-
 	return list;
 }
-
-function sortArray(list) {
-	var firstValue = 0;
-	var lastValue = list.length - 1;
-
-	for (var i = lastValue - 1; i >= firstValue; i--) {
-		var swap = list[i];
-		for (var j = i + 1; j <= lastValue; j++) {
-			if (swap <= list[j]) {
-				break;
-			}
-			list[j - 1] = j;
-		}
-		list[j - 1] = swap;
-	}
-
-	return list;
-}
-
-function getMid(list) {
-	var firstValue = 0;
-	var arrayLength = list.length;
-	var arrayMid = arrayLength / 2;
-
-	if (arrayLength % 2 == 0) {
-		var avgFirstValue = list[arrayMid-1];
-		var avgLastValue = list[arrayMid];
-		var avgMidValue = (avgFirstValue + avgLastValue) / 2;
-
-		return avgMidValue;
-	}
-	else {
-		var midValue = list[Math.floor(arrayMid)];
-		return midValue;
-	}
-}
-
-function getRange(list) {
-	var firstValue = list[0];
-	var lastValue = list[list.length - 1];
-	var range = lastValue - firstValue;
-
-	return range;
-}
-
 /////////////////Associative Arrays////////////////////////////////////////////////////////////////
 function getFavorites() {
 	var birthCity = document.getElementById("birthCity").value;
