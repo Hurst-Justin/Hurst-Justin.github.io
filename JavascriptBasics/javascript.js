@@ -62,7 +62,7 @@ function createArray(arraySize){
 	return list;
 }
 /////////////////Associative Arrays////////////////////////////////////////////////////////////////
-function getFavorites() {
+function getLocations() {
 	var birthCity = document.getElementById("birthCity").value;
 	var homeTown = document.getElementById("homeTown").value;
 	var currentCity = document.getElementById("currentCity").value;
