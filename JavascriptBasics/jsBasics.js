@@ -39,15 +39,12 @@ function getMultiples() {
 //////////////////Parameters / Arrays///////////////////////////////////////////////////////////////
 function getArray() {
 	var arraySize = parseInt(prompt("How many numbers would you like in the array?"));
-
 	if (isNaN(arraySize)) {
 		document.getElementById("arrayOutput").innerHTML = "Error: Invalid input.";
 	} else {
 		var list = createArray(arraySize);
 	}
-
 	document.getElementById("arrayOutput").innerHTML = "Values entered into the array: " + "[" + list + "]";
-
 }
 
 function createArray(arraySize){
