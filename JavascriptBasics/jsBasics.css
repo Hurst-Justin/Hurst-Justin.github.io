@@ -1,0 +1,17 @@
+/* File: jsBasics.css */
+input[type="text"] {
+	width: 350px;
+	outline: none;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 7px;
+	margin: 6px 0px 16px 0px;
+	transition: 500ms linear;
+	background-color: #fcf9c2;
+}
+
+h1{color: #009dd9;text-align:center;}
+.Section1 {color: #009dd9;text-align:center;}
+td:hover {background-color:#525252;} 
+table {    border-collapse: collapse; align:"center"; }
+table, td, th{border: 1px solid black}

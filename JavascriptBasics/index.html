@@ -1,18 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>CS 213 Week 05 Ponder and Prove</title>
-        <script type="text/javascript" src=""></script>
-        <style type="text/css">
-        </style>
-    </head>
-<body>
-<h1>Javascript</h1>
-<h2>Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</h2>
+	<head>
+		<meta charset=utf-8>
+		<title>JavaScript - Basics</title>
+		<link rel="stylesheet" type="text/css" href="jsBasics.css">
+		<script type="text/javascript" src="jsBasics.js"></script>
+	</head>
 
-<list>
-    <a href="/Javascript/index.html">Javascript</a>
-</list>
-</body>
+	<body>
+		<main>
+            <h1>Loops, Conditional Statements, Functions, Variables, Parameters, Array, Associative Arrays</h1>
+
+            <div class=Section1>
+                    <button  type="button" onclick="resetPage()" class="myButtons">Reset</button>
+                    <button type="button" class="myButtons" onclick="window.location.href='../index.html'">Home</button>
+                    <table align="center">
+                            <thead>
+                                <tr>
+                                    <th>
+                                            <h3>Loops / Conditional Statements / Functions / Variables</h3>
+                                    </th>
+                                    <th>
+                                            <h3>Parameters / Arrays / Conditional Statements / Functions / Variables</h3>
+                                    </th>
+                                    <th>
+                                            <h3>Associative Arrays</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td valign="top">
+                                            <p>Input a number to multiply</p>
+                                            <input type="number" id="numInput">
+                                
+                                            <p>Input number of multiples</p>
+                                            <input type="number" id="numInput2">
+                                            <br>
+                                            <br>
+                                            <button type="button" onclick="getMultiples()" class="myButtons">Show Multples</button>
+                                            <p></p>
+                                            <div id="numOutput"></div>
+                                            </div>
+                                    </td>
+                                    <td valign="top">
+                                            <p>Create an array as large as you like, <br>but beware you'll have to enter integers to go in the array as well</p>
+
+                                            <button type="button" onclick="getArray()" class="myButtons">Create an Array Full of Integers</button>
+                                            <p></p>
+                                            <div id="arrayOutput"></div>
+                                            <div id="midOutput"></div>
+                                            <div id="rangeOutput"></div>
+                                    </td>
+                                    <td valign="top">
+                                            <p>Takes some of your favorite places and puts them in an associative array.</p>
+
+                                            <input type="text" id="birthCity" placeholder="Birth Place" class="zoom"> <br>
+                                            <input type="text" id="homeTown" placeholder="Home Town" class="zoom"> <br>
+                                            <input type="text" id="currentCity" placeholder="Current City" class="zoom"> <br>
+                                            <input type="text" id="favCity" placeholder="Favorite City" class="zoom"> <br>
+                                            <input type="text" id="favCountry" placeholder="Favority Country" class="zoom"> <br>
+                                            <button type="button" onclick="getFavorites()" class="myButtons">Show Me My Favorite Places</button>
+                                            <p></p>
+                                
+                                            <div id="associativeArray"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>         
+           
+
+
+			
+			
+		</main>
+	</body>
 </html>
