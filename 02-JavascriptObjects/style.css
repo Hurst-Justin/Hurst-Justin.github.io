@@ -11,7 +11,8 @@ input[type="text"] {
 }
 
 h1{color: #009dd9;text-align:center;}
-.Section1 {color: #009dd9;text-align:center;}
+h3{color: #009dd9;}
+.Section1 {text-align:center;}
 td:hover {background-color:#525252;} 
 table {    border-collapse: collapse; margin-left:auto; margin-right:auto; }
-table, td, th{border: 1px solid black}
+table, td, th{border: 1px solid black; width: 1000px;}

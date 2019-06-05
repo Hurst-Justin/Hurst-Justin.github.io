@@ -7,108 +7,76 @@
         <script type="text/javascript" src="javascript.js"></script>
     </head>
     <body>
-        <header>
-        </header>
         <main>
-            <h2>Javascript -- Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h2>
-            <h3>Constructors:</h3>
-            <pre>
-                <code>
-var myFirstObject = new Object();
-var mySecondObject = {};
-var myThirdObject = {
-    volume: "Book of Mormon",
-    book: "Moroni",
-    chapter: "10",
-    verses: "3-5"
-}
-                </code>
-            </pre>
-            <button onclick="testConstructors()">Run the Constructors</button>
-            <br>myFirstObject:
-            <div id="firstObject"></div>
-            <br>mySecondObject:
-            <div id="secondObject"></div>
-            <br>myThirdObject:
-            <div id="thirdObjectVol"></div>
-            <div id="thirdObjectBook"></div>
-            <div id="thirdObjectChap"></div>
-            <div id="thirdObjectVerse"></div>
-            <h3>Properties:</h3>
-            <pre>
-                <code>
-myFirstObject.name = "Sterling";
-mySecondObject["temperature"] = 47.3;
-myThirdObject.volume = "New Testament"
-myThirdObject.book = "John"
-myThirdObject["chapter"] = "1"
-myThirdObject["verses"] = "1"                </code>
-            </pre>
-            <button onclick="testProperties()">Demonstrate the Properties</button>
-            <br>myFirstObject:
-            <div id="firstObject2"></div>
-            <br>mySecondObject:
-            <div id="secondObject2"></div>
-            <br>myThirdObject:
-            <div id="thirdObjectVol2"></div>
-            <div id="thirdObjectBook2"></div>
-            <div id="thirdObjectChap2"></div>
-            <div id="thirdObjectVerse2"></div>
-            <h3>Methods:</h3>
-            <pre>
-                <code>
-var generalConference = {
-    month: "April",
-    location: "Salt Lake City",
-    daysUntil: function () {
-        var today = new Date();
-        var conf = new Date(today.getFullYear(), 3, 6);
-        const one_day = 1000*60*60*24;
-        return Math.ceil((conf.getTime()-today.getTime())/one_day);
-    }
-}
-               </code>
-            </pre>
-            <button onclick="testMethods()">Demonstrate the Methods</button>
-            <br>General Conference Month:
-            <div id="conferenceMonth"></div>
-            <br>General Conference Location:
-            <div id="conferenceLocation"></div>
-            <br>Days Until General Conference:
-            <div id="conferenceUntil"></div>
-            <h3>Multiple Instances:</h3>
-            <pre>
-                <code>
-// Preparing for multiple instances of an object
-var classMates = [];
-function ClassMate(lastName, firstName, expertise) {
-    this.lastName = lastName,
-    this.firstName = firstName,
-    this.expertise = expertise,
-    this.helloString = function () {
-        return "Hail, " + this.firstName + " " + this.lastName + 
-        ", master of " + this.expertise;
-    }
-}
-
-// Create an array of objects
-classMates.push(new ClassMate("Wright", "Sterling", "napping"));
-classMates.push(new ClassMate("Doe", "John", "Java"));
-classMates.push(new ClassMate("Torvalds", "Linus", "Linux"));
-               </code>
-            </pre>
-            <button onclick="testInstances()">Demonstrate the Instances</button>
-            <br>First Instance:
-            <div id="instance1"></div>
-            <br>Second Instance:
-            <div id="instance2"></div>
-            <br>Third Instance:
-            <div id="instance3"></div>
+            <h1>Javascript -- Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h1>
+            
+            <div class=Section1>
+                    <button  type="button" onclick="resetPage()" class="myButtons">Reset</button>
+                    <button type="button" class="myButtons" onclick="window.location.href='../index.html'">Home</button>
+                    <table align="center">
+                            <thead>
+                                <tr>
+                                    <th>
+                                            <h3>Constructors</h3>
+                                    </th>
+                                    <th>
+                                            <h3>Properties</h3>
+                                    </th>
+                                    <th>
+                                            <h3>Methods</h3>
+                                    </th>
+                                    <th>
+                                            <h3>Instantiation</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td valign="top">
+                                            <button onclick="demoConstructors()">Demo Constructors</button>
+                                            <br><b>Song One:</b>
+                                            <div id="songOne"></div>
+                                            <br><b>Song Two:</b>
+                                            <div id="songTwo"></div>
+                                            <br><b>Song Three:</b>
+                                            <div id="songThreeAlbum"></div>
+                                            <div id="songThreeTitle"></div>
+                                            <div id="songThreeArtist"></div>
+                                            <div id="songThreeTrackLength"></div>
+                                    </td>
+                                    <td valign="top">
+                                            <button onclick="demoProperties()">Demo Properties</button>
+                                            <br><b>Song One:</b>
+                                            <div id="songOne2"></div>
+                                            <br><b>Song Two:</b>
+                                            <div id="songTwo2"></div>
+                                            <br><b>Song Three:</b>
+                                            <div id="songThreeAlbum2"></div>
+                                            <div id="songThreeTitle2"></div>
+                                            <div id="songThreeArtist2"></div>
+                                            <div id="songThreeTrackLength2"></div>
+                                    </td>
+                                    <td valign="top">
+                                            <button onclick="demoMethods()">Demo Methods</button>
+                                            <br><b>Artist:</b>
+                                            <div id="songArtist"></div>
+                                            <br><b>Title:</b>
+                                            <div id="songTitle"></div>
+                                            <br><b>Track Length:</b>
+                                            <div id="songTrackLength"></div>
+                                    </td>
+                                    <td valign="top">
+                                            <button onclick="demoInstances()">Demo Instantiation</button>
+                                            <br><b>Song One:</b>
+                                            <div id="instance1"></div>
+                                            <br><b>Song Two:</b>
+                                            <div id="instance2"></div>
+                                            <br><b>Song Three:</b>
+                                            <div id="instance3"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
         </main>
-        <footer>
-            &copy;2019 J. Sterling Wright, Virgina - 
-            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
-        </footer>
-        <script src="jsobjects.js"></script>
     </body>
 </html>

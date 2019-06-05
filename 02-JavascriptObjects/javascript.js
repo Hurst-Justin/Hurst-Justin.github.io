@@ -1,78 +1,86 @@
-// Different ways to create objects
-var myFirstObject = new Object();
-var mySecondObject = {};
-var myThirdObject = {
-	volume: "Book of Mormon",
-	book: "Moroni",
-	chapter: "10",
-	verses: "3-5",
+function resetPage() {
+	location.reload();
 }
 
-// An object with a method
-var generalConference = {
-	month: "April",
-	location: "Salt Lake City",
-	daysUntil: function () {
-		var today = new Date();
-		var conf = new Date(today.getFullYear(), 3, 6);
-		const one_day = 1000*60*60*24;
-		return Math.ceil((conf.getTime()-today.getTime())/one_day);
-	}
+// objects
+var song1 = new Object();
+var song2 = {};
+var song3 = {
+	album: "Evolve",
+	title: "Believer",
+	artist: "Imagine Dragons",
+	trackLength: "3:24",
 }
 
-// Different ways of handling properties
+function demoConstructors() {
+	document.getElementById('songOne').innerHTML = song1;	
+	document.getElementById('songTwo').innerHTML = song2;	
+	document.getElementById('songThreeAlbum').innerHTML = "Album:  " + song3.album;
+	document.getElementById('songThreeTitle').innerHTML = "Title:  " + song3.title;
+	document.getElementById('songThreeArtist').innerHTML = "Artist:  " + song3.artist;
+	document.getElementById('songThreeTrackLength').innerHTML = "Track Length:  " + song3.trackLength;
+}
+
+// properties
 function changeProperties() {
-	myFirstObject.name = "Sterling";
-	mySecondObject["temperature"] = 47.3;
-	myThirdObject.volume = "New Testament"
-	myThirdObject.book = "John"
-	myThirdObject["chapter"] = "1"
-	myThirdObject["verses"] = "1"
+	song1.title = "Old Town Road";
+	song2["artist"] = "Lil Nas X";
+	song3.album = "Blurryface"
+	song3.title = "Stressed Out"
+	song3["artist"] = "Twenty One Pilots"
+	song3["trackLength"] = "3:22"
 }
 
-// Preparing for multiple instances of an object
-var classMates = [];
-function ClassMate(lastName, firstName, expertise) {
-	this.lastName = lastName,
-	this.firstName = firstName,
-	this.expertise = expertise,
-	this.helloString = function () {
-		return "Hail, " + this.firstName + " " + this.lastName + ", master of " + this.expertise;
+function demoProperties() {
+	changeProperties();
+	document.getElementById('songOne2').innerHTML = "Title:  " + song1.title;	
+	document.getElementById('songTwo2').innerHTML = "Artist:  " + song2["artist"];	
+	document.getElementById('songThreeAlbum2').innerHTML = "Album:  " + song3.album;
+	document.getElementById('songThreeTitle2').innerHTML = "Title:  " + song3.title;
+	document.getElementById('songThreeArtist2').innerHTML = "Artist:  " + song3["artist"];
+	document.getElementById('songThreeTrackLength2').innerHTML = "Track Length:  " + song3["trackLength"];
+}
+
+// methods
+var getMethodSong = {
+	artist: "Taylor Swift",
+	title: "ME! (feat. Brendon Urie)",
+	trackLenth: function () {
+		var min = 3;
+		var sec = 13;
+		return min + ":" + sec;
 	}
 }
 
-// Create an array of objects
-classMates.push(new ClassMate("Wright", "Sterling", "napping"));
-classMates.push(new ClassMate("Doe", "John", "Java"));
-classMates.push(new ClassMate("Torvalds", "Linus", "Linux"));
-
-function testConstructors() {
-	document.getElementById('firstObject').innerHTML = myFirstObject;	
-	document.getElementById('secondObject').innerHTML = mySecondObject;	
-	document.getElementById('thirdObjectVol').innerHTML = myThirdObject.volume;
-	document.getElementById('thirdObjectBook').innerHTML = myThirdObject.book;
-	document.getElementById('thirdObjectChap').innerHTML = myThirdObject.chapter;
-	document.getElementById('thirdObjectVerse').innerHTML = myThirdObject.verses;
+function demoMethods() {
+	document.getElementById('songArtist').innerHTML = getMethodSong.artist;	
+	document.getElementById('songTitle').innerHTML = getMethodSong.title;	
+	document.getElementById('songTrackLength').innerHTML = getMethodSong.trackLenth();
 }
 
-function testProperties() {
-	changeProperties();
-	document.getElementById('firstObject2').innerHTML = myFirstObject.name;	
-	document.getElementById('secondObject2').innerHTML = mySecondObject["temperature"];	
-	document.getElementById('thirdObjectVol2').innerHTML = myThirdObject.volume;
-	document.getElementById('thirdObjectBook2').innerHTML = myThirdObject.book;
-	document.getElementById('thirdObjectChap2').innerHTML = myThirdObject["chapter"];
-	document.getElementById('thirdObjectVerse2').innerHTML = myThirdObject["verses"];
+// Instances
+var classMates = [];
+function ClassMate(album, title, artist, trackLength) {
+	this.album = album,
+	this.title = title,	
+	this.artist = artist,
+	this.trackLength = trackLength,
+	this.songString = function () {
+		return 	"Album:  " + this.album + "<br>" +
+						"Title:  " + this.title + "<br>" +
+						"Artist:  " + this.artist + "<br>" +
+						"Track Length:  " + this.trackLength;
+	}
+}
+// Array of objects
+classMates.push(new ClassMate("Floored", "Fly", "Sugar Ray", "4:52"));
+classMates.push(new ClassMate("Hot Fuss", "Mr. Brightside", "The Killers", "3:42"));
+classMates.push(new ClassMate("Bleed American", "The Middle", "Jimmy Eat World", "2:45"));
+
+function demoInstances() {
+	//innerHTML = innerHTML.replace(/\n\r?/g, '<br />');
+	document.getElementById('instance1').innerHTML = classMates[0]["songString"]();	
+	document.getElementById('instance2').innerHTML = classMates[1]["songString"]();	
+	document.getElementById('instance3').innerHTML = classMates[2]["songString"]();
 }
 
-function testMethods() {
-	document.getElementById('conferenceMonth').innerHTML = generalConference.month;	
-	document.getElementById('conferenceLocation').innerHTML = generalConference.location;	
-	document.getElementById('conferenceUntil').innerHTML = generalConference.daysUntil();
-}
-
-function testInstances() {
-	document.getElementById('instance1').innerHTML = classMates[0]["helloString"]();	
-	document.getElementById('instance2').innerHTML = classMates[1]["helloString"]();	
-	document.getElementById('instance3').innerHTML = classMates[2]["helloString"]();
-}
