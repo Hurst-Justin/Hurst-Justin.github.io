@@ -58,7 +58,7 @@ function demoMethods() {
 	document.getElementById('songTrackLength').innerHTML = getMethodSong.trackLenth();
 }
 
-// Instances
+// Instantiation
 var songInfo = [];
 function SongInfo(album, title, artist, trackLength) {
 	this.album = album,
@@ -78,7 +78,6 @@ songInfo.push(new SongInfo("Hot Fuss", "Mr. Brightside", "The Killers", "3:42"))
 songInfo.push(new SongInfo("Bleed American", "The Middle", "Jimmy Eat World", "2:45"));
 
 function demoInstances() {
-	//innerHTML = innerHTML.replace(/\n\r?/g, '<br />');
 	document.getElementById('instance1').innerHTML = songInfo[0]["songString"]();	
 	document.getElementById('instance2').innerHTML = songInfo[1]["songString"]();	
 	document.getElementById('instance3').innerHTML = songInfo[2]["songString"]();
