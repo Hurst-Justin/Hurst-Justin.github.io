@@ -59,8 +59,8 @@ function demoMethods() {
 }
 
 // Instances
-var classMates = [];
-function ClassMate(album, title, artist, trackLength) {
+var songInfo = [];
+function SongInfo(album, title, artist, trackLength) {
 	this.album = album,
 	this.title = title,	
 	this.artist = artist,
@@ -73,14 +73,14 @@ function ClassMate(album, title, artist, trackLength) {
 	}
 }
 // Array of objects
-classMates.push(new ClassMate("Floored", "Fly", "Sugar Ray", "4:52"));
-classMates.push(new ClassMate("Hot Fuss", "Mr. Brightside", "The Killers", "3:42"));
-classMates.push(new ClassMate("Bleed American", "The Middle", "Jimmy Eat World", "2:45"));
+songInfo.push(new SongInfo("Floored", "Fly", "Sugar Ray", "4:52"));
+songInfo.push(new SongInfo("Hot Fuss", "Mr. Brightside", "The Killers", "3:42"));
+songInfo.push(new SongInfo("Bleed American", "The Middle", "Jimmy Eat World", "2:45"));
 
 function demoInstances() {
 	//innerHTML = innerHTML.replace(/\n\r?/g, '<br />');
-	document.getElementById('instance1').innerHTML = classMates[0]["songString"]();	
-	document.getElementById('instance2').innerHTML = classMates[1]["songString"]();	
-	document.getElementById('instance3').innerHTML = classMates[2]["songString"]();
+	document.getElementById('instance1').innerHTML = songInfo[0]["songString"]();	
+	document.getElementById('instance2').innerHTML = songInfo[1]["songString"]();	
+	document.getElementById('instance3').innerHTML = songInfo[2]["songString"]();
 }
 
