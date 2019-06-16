@@ -1,0 +1,7 @@
+h1{color: #009dd9;text-align:center;}
+h3{color: #009dd9;}
+.Section1 {text-align:center;}
+td:hover {background-color:#525252;} 
+table {    border-collapse: collapse; margin-left:auto; margin-right:auto; }
+td, th { width: 300px;}
+table, td, th{border: 1px solid black;}

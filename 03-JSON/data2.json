@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"first_name": "Ethan",
+		"last_name": "Sellards",
+		"relation": "Friend",
+		"gender": "Male",
+		"age": 22
+	},
+	{
+		"id": 2,
+		"first_name": "Daniel",
+		"last_name": "Wu",
+		"relation": "Friend",
+		"gender": "Male",
+		"age": 21
+	},
+	{
+		"id": 3,
+		"first_name": "Kenzi",
+		"last_name": "Schneider",
+		"relation": "Friend",
+		"gender": "Female",
+		"age": 22
+	}
+]

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>JSON Parse, Stringify</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="javascript.js"></script>
+        <script type="text/javascript" src="data1.json"></script>
+        <script type="text/javascript" src="data2.json"></script>
+    </head>
+    <body>
+        <main>
+            <h1>JSON Parse, Stringify</h1>
+            
+            <div class=Section1>
+                    <button  type="button" onclick="resetPage()" class="myButtons">Reset</button>
+                    <button type="button" class="myButtons" onclick="window.location.href='../index.html'">Home</button>
+                    <p>Push each button to display each JSON file.</p>
+                    <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                            <h3>JSON File 1</h3>
+                                            <button type="button" onclick="getFile1()" class="myButtons">Pull JSON File 1</button>
+                                    </th>
+                                    <th>
+                                            <h3>JSON File 2</h3>
+                                            <button type="button" onclick="getFile2()" class="myButtons">Pull JSON File 2</button>
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td valign="top">
+                                        <p>Here is the output for JSON file 1:</p>
+                                        <div id="jsonOutput1"></div>
+                                        <div id="jsonStringOutput1"></div>
+                                    </td>
+                                    <td valign="top">
+                                        <p>Here is the output for JSON file 2:</p>
+                                        <div id="jsonOutput2"></div>
+                                        <div id="jsonStringOutput2"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+        </main>
+    </body>
+</html>

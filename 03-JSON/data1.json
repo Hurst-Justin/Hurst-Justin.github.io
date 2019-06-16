@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"first_name": "Kade",
+		"last_name": "Waisath",
+		"gender": "Male",
+		"fav_color": "Blue",
+		"age": 15
+	},
+	{
+		"id": 2,
+		"first_name": "Brayden",
+		"last_name": "Waisath",
+		"gender": "Male",
+		"fav_color": "Red",
+		"age": 15
+	},
+	{
+		"id": 3,
+		"first_name": "CJ",
+		"last_name": "Waisath",
+		"gender": "Male",
+		"fav_color": "Yellow",
+		"age": 21
+	},
+	{
+		"id": 4,
+		"first_name": "Whitney",
+		"last_name": "Larsen",
+		"gender": "Female",
+		"fav_color": "Pink",
+		"age": 23
+	}
+]
