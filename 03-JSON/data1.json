@@ -1,34 +1,56 @@
 [
 	{
 		"id": 1,
-		"first_name": "Kade",
-		"last_name": "Waisath",
+		"first_name": "Adam",
+		"last_name": "Sandler",
 		"gender": "Male",
 		"fav_color": "Blue",
-		"age": 15
+        "birthYear": 1966 ,
+        "movie1": "Billy Madison",
+        "movie2": "The Waterboy",
+        "movie3": "Murder Mystery",
+        "movie4": "The Cobbler",
+        "movie5": "Grown Ups"
+
 	},
 	{
 		"id": 2,
-		"first_name": "Brayden",
-		"last_name": "Waisath",
-		"gender": "Male",
-		"fav_color": "Red",
-		"age": 15
+		"first_name": "Jenifer",
+		"last_name": "Aniston",
+		"gender": "Female",
+		"fav_color": "Brown",
+        "birthYear": 1969 ,
+        "movie1": "Murder Mystery",
+        "movie2": "Just Go With It",
+        "movie3": "The Switch",
+        "movie4": "The Break-Up",
+        "movie5": "Marley & Me"
+
 	},
 	{
 		"id": 3,
-		"first_name": "CJ",
-		"last_name": "Waisath",
+		"first_name": "Jason",
+		"last_name": "Bateman",
 		"gender": "Male",
-		"fav_color": "Yellow",
-		"age": 21
+		"fav_color": "Red",
+        "birthYear": 1969 ,
+        "movie1": "The Switch",
+        "movie2": "Couples Retreat",
+        "movie3": "Central Intelligence",
+        "movie4": "Juno",
+        "movie5": "Hancock"
 	},
 	{
 		"id": 4,
-		"first_name": "Whitney",
-		"last_name": "Larsen",
-		"gender": "Female",
-		"fav_color": "Pink",
-		"age": 23
+		"first_name": "Dwayne",
+		"last_name": "Johnson",
+		"gender": "Male",
+		"fav_color": "Black",
+        "birthYear": 1972 ,
+        "movie1": "Central Intelligence",
+        "movie2": "Jumanji",
+        "movie3": "Skyscraper",
+        "movie4": "Rampage",
+        "movie5": "Moana"
 	}
 ]

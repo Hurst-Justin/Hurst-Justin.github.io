@@ -1,26 +1,57 @@
 [
 	{
 		"id": 1,
-		"first_name": "Ethan",
-		"last_name": "Sellards",
-		"relation": "Friend",
-		"gender": "Male",
-		"age": 22
+		"first_name": "Neve",
+		"last_name": "Campbell",
+		"gender": "Female",
+		"fav_color": "Pink",
+        "birthYear": 1973 ,
+        "movie1": "Skyscraper",
+        "movie2": "Scream",
+        "movie3": "Scream 2",
+        "movie4": "Scream 3",
+        "movie5": "Scream 4"
+
 	},
 	{
 		"id": 2,
-		"first_name": "Daniel",
-		"last_name": "Wu",
-		"relation": "Friend",
-		"gender": "Male",
-		"age": 21
+		"first_name": "Jada",
+		"last_name": "Pinkett Smith",
+		"gender": "Female",
+		"fav_color": "Yellow",
+        "birthYear": 1971 ,
+        "movie1": "Scream 2",
+        "movie2": "Girls Trip",
+        "movie3": "Madagascar: Escape 2 Africa",
+        "movie4": "Bad Moms",
+        "movie5": "The Matrix Reloaded"
+
 	},
 	{
 		"id": 3,
-		"first_name": "Kenzi",
-		"last_name": "Schneider",
-		"relation": "Friend",
-		"gender": "Female",
-		"age": 22
+		"first_name": "Chris",
+		"last_name": "Rock",
+		"gender": "Male",
+		"fav_color": "green",
+        "birthYear": 1965 ,
+        "movie1": "Madagascar: Escape 2 Africa",
+        "movie2": "Madagascar",
+        "movie3": "The Longest Yard",
+        "movie4": "Head of State",
+        "movie5": "Doctor Dolittle"
+	},
+	{
+		"id": 4,
+		"first_name": "Adam",
+		"last_name": "Sandler",
+		"gender": "Male",
+		"fav_color": "Blue",
+        "birthYear": 1966 ,
+        "movie1": "The Longest Yard",
+        "movie2": "Hotel Transylvania",
+        "movie3": "Hotel Transylvania 2",
+        "movie4": "Hotel Transylvania 3: Summer Vacation",
+        "movie5": "Blended"
+
 	}
 ]
