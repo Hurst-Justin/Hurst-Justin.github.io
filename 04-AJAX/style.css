@@ -1,0 +1,7 @@
+h1{color: #009dd9;text-align:center;}
+h3{color: #009dd9;}
+.Section1 {text-align:center;}
+table {    margin-left:auto; margin-right:auto; }
+td, th { width: 500px;}
+table, td, th{border-style: none;}
+.output {text-align: left}
