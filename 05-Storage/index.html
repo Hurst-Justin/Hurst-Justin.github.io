@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Local Storage</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="javascript.js"></script>
+	</head>
+
+	<body>
+		<main>
+            <h1>Local Storage</h1>
+            <div class=Section1>
+            <button  type="button" onclick="resetPage()" class="myButtons">Reset Page</button>
+            <button type="button" class="myButtons" onclick="window.location.href='../index.html'">Home</button>
+            <br><br>
+            <table>
+                    <thead>
+                        <tr>
+                            <td valign="top">
+                                <h3>Keep Track of Button Clicks in Local Storage</h3>
+                                <button class="myButtons" type="button" onclick="localStorageCount()">Show Local Storage Click Count</button>
+                                <button class="myButtons" type="button" onclick="resetLocalStorage()">Reset Local Storage</button>
+                                <br>
+                                <br>
+                                <div id="localResult"></div>
+
+                            </td1>
+                            <td valign="top">
+                                <h3>Store Your Information in Local Storage</h3>
+                                <input type="text" id="firstName" placeholder="First Name"> <br>
+                                <input type="text" id="lastName" placeholder="Last Name"> <br>
+                                <input type="text" id="birthday" placeholder="Birthday"> <br>
+                                <input type="text" id="email" placeholder="Email"> <br>
+                                <input type="text" id="phone" placeholder="Phone"> <br>
+                                <button class="myButtons" type="button" onclick="createLocalStorage()">Submit</button>
+                                <button class="myButtons" type="button" onclick="getLocalStorage()">Show</button>
+                                <button class="myButtons" type="button" onclick="resetLocalStorage()">Reset Local Storage</button>
+                                <br>
+                                <br>
+                                <div class=output id="Submission"></div>   
+                                <br>
+                                <div class=output id="userOutputLocal"></div>   
+                            </td>
+
+                        </tr>
+                    </thead>
+
+                </table>
+            </div>
+		</main>
+	</body>
+</html>
