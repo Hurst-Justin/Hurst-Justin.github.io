@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>DOM - Document Object Model</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>	
+</head>
+
+<body>
+    <div class="Section1">
+        <h1>Document Object Model</h1>        
+        <button  type="button" onclick="resetPage()" class="myButtons">Reset Page</button>
+        <button type="button" class="myButtons" onclick="window.location.href='../index.html'">Home</button>
+            <table>
+                    <thead>
+                        <tr>
+                            <th valign="top">
+                                <h3>createElement, appendChild, and removeChild</h3>
+                                <p>Click the button to append an item to the end of the list.</p>
+                                <button onclick="appendListAfter()">Add an Item to End of List</button>
+                                <button onclick="removeLast()">Remove Last Item</button>
+                            </th>
+                            <th valign="top">
+                                <h3>createElement, insertBefore, and removeChild</h3>
+                                <p>Click the button to append an item to the beginning of the list.</p>
+                                <button onclick="appendListBefore()">Add an Item to Beginning of List</button>
+                                <button onclick="removeFirst()">Remove First Item</button>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="output">
+                            <td valign="top">
+                                <ul id="element1">
+                                    <li>Bananas</li>
+                                    <li>Apples</li>
+                                </ul>
+                            </td>
+                            <td valign="top">
+                                <ul id="element2">
+                                    <li>Bananas</li>
+                                    <li>Apples</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+</body>
+</html>

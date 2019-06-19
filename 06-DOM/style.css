@@ -1,0 +1,8 @@
+h1{color: #009dd9;text-align:center;}
+h3{color: #009dd9;text-align:center;}
+.Section1 {text-align:center;}
+table {  border-collapse: collapse;  margin-left:auto; margin-right:auto; }
+td, th { width: 350px;}
+table, td, th{border: 1px solid black;}
+.output {text-align: left; text-emphasis: none;}
+ul {list-style-position: inside;}
