@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS using Javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body onload="changeDiv()">
+    <main>
+        <h1>CSS using Javascript</h1>
+        <button  type="button" onclick="resetPage()" class="myButtons">Reset Page</button>
+        <button type="button" class="myButtons" onclick="window.location.href='../index.html'">Home</button>
+        <br><br>
+        <div class="topic">
+                <p>Use the options below to customize your box.</p>
+                <label>Color</label>
+                <select id="inputColor">
+                    <option value="lightblue">Blue</option>
+                    <option value="lightgrey">Grey</option>
+                    <option value="lightcoral">Coral</option>
+                    <option value="aqua">Aqua</option>
+                    <option value="lavender">Purple</option>
+                    <option value="lightgoldenrodyellow">Yellow</option>
+                </select>
+                <br>
+                <label>Height</label>
+                <input type="number" id="inputHeight" value="100">
+                <br>
+                <label>Width</label>
+                <input type="number" id="inputWidth" value="100">
+                <br>
+                <label>Corner Radius</label>
+                <input type="number" id="inputRadius" value="30">
+                <br>
+                <label>Font</label>
+                <select id="inputFont">
+                    <option value="Times New Roman, Times, serif">Times New Roman</option>
+                    <option value="Palatino Linotype, Book Antiqua, Palatino, serif">Palatino</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Raleway">Raleway</option>
+                </select>
+                <br>
+                <label>Font Size</label>
+                <input type="number" id="inputFontSize" value="15">
+                <br>
+                <button type="button" onclick="changeDiv()">View</button>
+                <br><br>
+            <div id="customBox">
+                <p>Your Custom Box</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -17,6 +17,6 @@ td, th {
     padding: 15px 30px;
     
 }
-
+td:hover {background-color:#a5a5a5;} 
 .blueCentered{color: #009dd9;text-align:center;}
 .centered{text-align:center;}
