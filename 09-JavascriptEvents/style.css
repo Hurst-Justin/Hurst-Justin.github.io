@@ -1,0 +1,150 @@
+h1, h2, h3 {color: #009dd9;}
+.Section1 {text-align:center;}
+table {  border-style: hidden; }
+td, th { width: 300px; }
+.input { width: 100%;}
+.output {text-align: left; text-emphasis: none;}
+.label {color: #009dd9;font-size: 1.2em;}
+ul {list-style-position: inside;}
+           
+div {border: solid black;}
+
+div#load {
+    background: red;
+    height: 100px;
+    width: 100px;
+}
+div#key {
+    background: cyan;
+    height: 100px;
+    width: 100px;
+}
+div#mouse {
+    background: pink;
+    height: 100px;
+    width: 100px;
+}
+div#click {
+    background: lightgrey;
+    height: 100px;
+    width: 100px;
+}
+div#container {
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+@keyframes loadFrame {
+    0% {
+        background: red;
+        height: 100px;
+        width: 100px;
+    }
+    16% {
+        background: orange;
+        height: 100px;
+        width: 100px;
+    }
+    32% {
+        background: yellow;
+        height: 100px;
+        width: 100px;
+    }
+    50% {
+        background: lightgreen;
+        height: 50px;
+        width: 50px;
+    }
+    66% {
+        background: yellow;
+        height: 100px;
+        width: 100px;
+    }
+    82% {
+        background: orange;
+        height: 100px;
+        width: 100px;
+    }
+    100% {
+        background: red;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@keyframes mouseFrame {
+    0% {
+        background: pink;
+        height: 100px;
+        width: 100px;
+    }
+    33% {
+        background: blue;
+        height: 300px;
+        width: 100px;
+    }
+    66% {
+        background: green;
+        height: 100px;
+        width: 300px; 
+    }
+    100% {
+        background: pink;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@keyframes keyPressed {
+    0% {
+        background: cyan;
+        height: 100px;
+        width: 100px;
+    }
+    10% {
+        background: blue;
+        height: 100px;
+        width: 100px;
+    }
+    20% {
+        background: purple;
+        height: 50px;
+        width: 50px;
+    }
+    30% {
+        background: white;
+    }
+    40% {
+        background: orange;
+        height: 100px;
+        width: 100px;
+    }
+    50% {
+        background: yellow;
+        height: 100px;
+        width: 100px;
+    }
+    60% {
+        background: lightgreen;
+        height: 250px;
+        width: 250px;
+    }
+    70% {
+        background: lightblue;
+        height: 300px;
+        width: 300px;
+    }
+    80% {
+        background: crimson;
+        height: 250px;
+        width: 250px;
+    }
+    90% {
+        background: teal;
+        height: 100px;
+        width: 100px;
+    }
+    100% {
+        background: cyan;
+    }
+}

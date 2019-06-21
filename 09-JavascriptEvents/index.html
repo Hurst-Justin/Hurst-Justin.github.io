@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Events</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body>
+        <h1>Javascript Events</h1>
+        
+        <p>This animation begins on load.</p>
+        <div id="container">
+            <div id="load" onclick="loadFunc();">onLoad</div>
+        </div><br>
+
+        <p>Press any key to start this animation</p>
+        <div id="key">onKey</div>
+        
+        <p>On mouse over > Transition. <br> On mouse out > Animation.</p>
+        <div id="mouse" onmouseover="mouseTransition()" onmouseout="mouseAnimation()">onMouseOver and onMouseOut</div>
+        
+        <p>Click to transition to a random color!</p>
+        <div id="click" onclick="clickFunc();">onClick</div>
+        
+    </body> 
+</html>

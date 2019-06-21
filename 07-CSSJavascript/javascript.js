@@ -35,20 +35,4 @@ function changeDiv() {
     document.getElementById('customBox').style.padding = "10px";
     
 }
-
-
-
-function localStorageCount() {
-	if (typeof(Storage) !== "undefined") {
-		if (localStorage.clickcount) {
-			localStorage.clickcount = Number(localStorage.clickcount) + 1;
-		} else {
-			localStorage.clickcount = 1;
-		}
-
-		document.getElementById("localResult").innerHTML = "Local Storage Count: " + localStorage.clickcount + " click(s)";
-	} else {
-		document.getElementById("localResult").innerHTML = "Error: Your browser does not support local storage.";
-	}
-}
   

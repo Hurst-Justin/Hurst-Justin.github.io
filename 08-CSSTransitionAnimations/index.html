@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+        <head>
+            <meta charset="utf-8">
+            <title>CSS Transitions and Animations</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script type="text/javascript" src="javascript.js"></script>
+        </head>
+<body>
+    <h1>Transitions and Animations</h1>
+    <button  type="button" onclick="resetPage()" class="myButtons">Reset Page</button>
+    <button type="button" class="myButtons" onclick="window.location.href='../index.html'">Home</button>
+       
+        <h2>Transitions</h2>
+        
+        <button type="button" onclick="changeColor('transitionBox', 'orange');">Orange</button>
+        <button type="button" onclick="changeColor('transitionBox', 'grey');">Grey</button>
+        <button type="button" onclick="changeColor('transitionBox', '#009dd9');">Reset Color</button><br><br>
+        <button type="button" onclick="slideUp('transitionBox');">Slide Up</button>
+        <button type="button" onclick="slideDown('transitionBox');">Slide Down</button><br><br>
+        
+        <div id="transitionBox">Transitions</div>
+        
+        <h2>Animations</h2>
+        
+        <button type="button" onclick="animation1('animationBox');">Play Animation 1</button>
+        
+        <button type="button" onclick="animation2('animationBox');">Play Animation 2</button><br><br>
+        
+        <div id="animationBox">Animations</div>
+        
+</body> 
+</html>
