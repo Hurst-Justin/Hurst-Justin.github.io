@@ -5,112 +5,45 @@ td, th { width: 300px; }
 .input { width: 100%;}
 .output {text-align: left; text-emphasis: none;}
 .label {color: #009dd9;font-size: 1.2em;}
-ul {list-style-position: inside;}
-           
-* {
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-  }
-  
-  main h1 {
-    font-size: 1.75rem;
-    color: black;
-  }
-  
-  header,
-  main,
-  footer {
-    margin: 0 auto;
-    padding: .5rem;
-    max-width: 1000px;
-  }
-  
-  header {
-    height: auto;
-    border-radius: 15px 15px 0 0;
-  }
-  
-  footer {
-    border-radius: 0 0 15px 15px;
-  }
-  
-  main {
-    background: #FAEBD7;
-  }
-  
-  header,
-  footer,
-  footer a {
-    text-align: center;
-    background-color: gray;
-    color: whitesmoke;
-  }
-  
-  footer {
-    height: 50px;
-    font-size: 0.7rem;
-  }
-  
-  video,
-  audio {
-    margin: 5px;
-    border-radius: 10px;
-  }
-  
-  .center {
-    text-align: center;
-  }
-  
-  #canv {
-    padding: 10px;
-  }
-  
-  .submitBtn {
-    color: #ffffff;
-    background-color: dimgray;
-    border-radius: 5px;
-    border: 0;
-    max-width: 150px;
-    padding: 10px;
-    font-size: 19px;
-    cursor: pointer;
-  }
-  
-  .submitBtn:hover {
-    background-color: black;
-    transition: all 500ms ease 0s;
-  }
-  
-  input.normalField {
-    background-color: azure;
-    border: 1px solid rgba(34,36,38,.15);
-    border-radius: 5px;
-    height: 35px;
-    margin: 5px 0;
-    font-size: 1.15em;
-    padding: .3em;
-    max-width: 200px;
-  }
-  
-  .sidebyside {
-    display: flex;
-    flex-flow: row;
-  }
-  
-  .stack {
-    display: flex;
-    flex-flow: column;
-    align-self: center;
-  }
-  
-  .fakeLink {
-    color: blue;
-    cursor: pointer;
-  }
+ul {list-style-position: inside;}  
+video, audio {margin: 5px;  border-radius: 15px;}  
+#canv {  padding: 10px;}
+.submitButton {
+  color: #ffffff;
+  background-color: #009dd9;
+  border-radius: 5px;
+  border: 0;
+  max-width: 150px;
+  padding: 10px;
+  font-size: 19px;
+  cursor: pointer;
+}
+.submitButton:hover {   background-color: black;   transition: all 500ms ease 0s; }
+
+input.normalField {
+  background-color: azure;
+  border: 1px solid rgba(34,36,38,.15);
+  border-radius: 5px;
+  height: 35px;
+  margin: 5px 0;
+  font-size: 1.15em;
+  padding: .3em;
+  max-width: 200px;
+}
+
+.sidebyside {
+  display: flex;
+  flex-flow: row;
+}
+
+.stack {
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+}
+
+.fakeLink {
+  color: blue;
+  cursor: pointer;
+}
   
