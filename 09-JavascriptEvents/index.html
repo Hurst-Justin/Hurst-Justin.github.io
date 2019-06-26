@@ -8,20 +8,20 @@
     </head>
     <body>
         <h1>Javascript Events</h1>
+        <button  type="button" onclick="resetPage()" class="myButtons">Reset Page</button>
+        <button type="button" class="myButtons" onclick="window.location.href='../index.html'">Home</button>
         
         <p>This animation begins on load.</p>
-        <div id="container">
-            <div id="load" onclick="loadFunc();">onLoad</div>
-        </div><br>
+        <div id="load">onLoad</div>
 
         <p>Press any key to start this animation</p>
         <div id="key">onKey</div>
         
         <p>On mouse over > Transition. <br> On mouse out > Animation.</p>
-        <div id="mouse" onmouseover="mouseTransition()" onmouseout="mouseAnimation()">onMouseOver and onMouseOut</div>
+        <div id="mouse" onmouseover="mouseTransition();" onmouseout="mouseAnimation()">onMouseOver and onMouseOut</div>
         
         <p>Click to transition to a random color!</p>
-        <div id="click" onclick="clickFunc();">onClick</div>
+        <div id="click" onclick="clickColor();">onClick</div>
         
     </body> 
 </html>

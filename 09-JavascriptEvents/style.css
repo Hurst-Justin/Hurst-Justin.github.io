@@ -9,34 +9,34 @@ ul {list-style-position: inside;}
            
 div {border: solid black;}
 
-div#load {
-    background: red;
+#load {
+    background: #009dd9;
     height: 100px;
     width: 100px;
 }
-div#key {
-    background: cyan;
+#key {
+    background: #009dd9;
     height: 100px;
     width: 100px;
 }
-div#mouse {
-    background: pink;
+#mouse {
+    background: #009dd9;
     height: 100px;
     width: 100px;
 }
-div#click {
-    background: lightgrey;
+#click {
+    background: #009dd9;
     height: 100px;
     width: 100px;
 }
-div#container {
+#container {
     height: 100px;
     width: 100px;
     border: none;
 }
 @keyframes loadFrame {
     0% {
-        background: red;
+        background: #009dd9;
         height: 100px;
         width: 100px;
     }

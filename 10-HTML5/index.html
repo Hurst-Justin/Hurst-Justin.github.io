@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Events</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body>
+        <header>
+          <h1>HTML5 Tags - Video, Audio and Canvas</h1>
+        </header>
+        <main>
+          <section>
+            <h2>Embeded Video</h2>
+            <p>The video tag is used to embed video into a webpage. Attributes such as width,height, src, controls, autoplay, loop and muted was used. The video you see below is from the BYUi website and is in mp4 format, which is specified as the value for the "src" attribute. Becuase the "controls" attribute was used, the video controls are available. It will start playing automaticall because of the "autoplay" attribute. The audio will be muted by default because the "muted" attribute was used.</p>
+            <div class="center">
+              <video width="427" height="240" controls autoplay loop muted>
+                <source src="https://cdnapisec.kaltura.com/p/1157612/sp/115761200/playManifest/entryId/0_2eul317m/flavorId/0_bqmbyx6b/format/url/protocol/http/a.mp4" type="video/mp4">
+                HTML5 video is not supported by your browser.
+              </video>
+            </div>
+          </section>
+          <section>
+            <h2>Embeded Audio</h2>
+            <p>The audio tag is used to embed audio into a webpage. Like video, it has many of the same attributes with the exception of width, height and poster. Otherwise, the have the same effect. The mp3 audio clip below is being sourced from the lds.org website and is the choir singing "I am a Child of God".</p>
+            <div class="center">
+              <audio src="https://media2.ldscdn.org/assets/general-conference/april-2019-general-conference/2019-04-1051-i-am-a-child-of-god-256k-eng.mp3" controls autoplay loop muted>
+                HTML5 audio is not supported by your browser.
+              </audio>
+            </div>
+          </section>
+          <section>
+            <h2>Canvas</h2>
+            <div class="sidebyside">
+              <div class="stack">
+                <input type="text" class="normalField" id="category" placeholder="Budget Item">
+                <input type="number" class="normalField" id="amt" placeholder="Budget Amount">
+                <input type="button" class="submitBtn" id="button1" value="Add" onclick="addBudgetItem();">
+              </div>
+              <div class="center">
+                <canvas id="canv" height="400" width="400">
+                  Your browser does not support canvas.
+                </canvas>
+              </div>
+              <div class="stack" id="Result"></div>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <div id="ftrbox">
+            <p>&copy;2019 Dan Carlson | CIT 261</p>
+          </div>
+        </footer>
+        <!-- For working with canvas element -->
+        <script src="js/canvas.js"></script>
+      </body>
+</html>
