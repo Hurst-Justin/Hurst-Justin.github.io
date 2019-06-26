@@ -1,0 +1,102 @@
+h1, h2, h3 {color: #009dd9;}
+.Section1 {text-align:center;}
+table {  border-style: hidden; }
+td, th { width: 300px; }
+.input { width: 100%;}
+.output {text-align: left; text-emphasis: none;}
+.label {color: #009dd9;font-size: 1.2em;}
+ul {list-style-position: inside;}  
+
+.transition {
+    display: inline-block;
+    margin: 50px;
+    color: white;
+}
+.square {
+    text-align:center;
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    }
+.square:hover {
+    cursor: pointer;
+    transform: scale(3);
+}
+.square1 { 
+    background-color: #009dd9;
+    transition: all 1s;
+}
+.square2 {
+    background-color: #009dd9;
+    transition: all  2s;
+}
+.square3 {
+    background-color: #009dd9;
+    transition: all 4s;
+}
+
+.timing {
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.timing1 {
+    background-color:#009dd9;
+}
+.timing1:hover {
+    width: 400px;
+    transition: width 1s linear;  
+}
+.timing2 {
+     background-color:#009dd9;
+    }
+.timing2:hover {
+    width: 400px;
+    transition: width 1s ease;
+}
+.timing3 {
+    background-color:#009dd9;
+}
+.timing3:hover {
+    width: 400px;
+    transition: width 1s ease-in;
+}
+.timing4 {
+    background-color:#009dd9;
+}
+.timing4:hover {
+    width: 400px;
+    transition: width 1s ease-out;
+}
+.timing5 {
+    background-color:#009dd9;
+}
+.timing5:hover {
+    width: 400px;
+    transition: width 1.5s ease-in-out;
+}
+
+#navigation ul {
+    overflow: hidden;
+    background-color: #009dd9;
+    height: 70px;
+    list-style-type: none;
+}
+#navigation ul a {
+    float: left;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    transition: .1s;    
+}
+
+#navigation ul a:hover{
+font-size: 2em;
+transition: .1s ;
+}
