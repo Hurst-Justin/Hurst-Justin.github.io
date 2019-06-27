@@ -26,9 +26,9 @@ ul {list-style-position: inside;}
 #box5:hover { transform: scale(2);}
 #box6:hover { transform: scale(2.5);}
 
-#box7:hover { transform:translate(0, 100px);}
-#box8:hover { transform:translate(100px, -100px);}
-#box9:hover {transform:translate(100px, 0);}
+#box7:hover { transform:translate(0, 50px);}
+#box8:hover { transform:translate(50px, 50px);}
+#box9:hover {transform:translate(50px, 0);}
 
 #box10:hover { transform:rotate(360deg);}
 #box11:hover { transform:rotate(-360deg);}
