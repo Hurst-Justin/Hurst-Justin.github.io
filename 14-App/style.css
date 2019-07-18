@@ -1,0 +1,105 @@
+.sidebar{
+
+    color: white; 
+    height: 100%; 
+    width: 300px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1; 
+    overflow-x: hidden; 
+    font-family: "Verdana", Geneva, sans-serif; 
+    font-size: 30px;
+}
+.sidebar a{
+    color: #009dd9; 
+    text-decoration: none; 
+    display: block;
+    font-size: 30px; 
+    padding: 10px 0px;
+
+}
+.form1{font-family: Arial, sans-serif;}
+.pic img{margin-bottom:-8px;margin-top: 20px;}
+.padding-40{padding: 0px 40px;}
+.block-40{padding: 0px 40px; list-style: block;}
+.header{margin:0; font-size: 40px; color: #009dd9;}
+.input1{font-size: 25px; padding: 1px; display: block; border: 1px solid #ccc; width: 97%;}
+.input2{font-size: 25px; padding: 1px; display: block; border: 1px solid #ccc; width: 98%;}
+.input3{font-size: 25px; text-align:right; float: right; width: 100px;}
+.input4{font-size: 25px; text-align:right; float: right; width: 100px;}
+.orderHeader{font-size: 30px; color: white; padding-left:5px; margin:20px 0px 2px; background-color:#009dd9;}
+.button1{
+        background-color: #6b6d6f;
+        border: none;
+        color: white;
+        padding: 10px 100px;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 100%;
+    }
+.button2{
+        background-color: #009dd9;
+        border: none;
+        color: white;
+        padding: 10px 100px;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 100%;
+    }
+.paymentform {font-size: 15px;}
+
+#xxlarge{font-size: 60px;}
+#xlarge{font-size: 40px;}
+#large{font-size: 25px;}
+#TableHeader{font-size: 25px;  font-weight:bold; margin:2px 0px 5px}
+#TotalFormat{font-size: 30px;  font-weight:bold; margin:10px 0px 0px;text-align: right;}
+#form{color: #009dd9;}
+#largeMessage{color: #009dd9; font-size: 40px;}
+#analytics {color: #009dd9;}
+#analyticTools {color: #009dd9; list-style-type: none; list-style-position: inside; margin:0; padding:0; font-size: 20px;}
+
+p {font-size: 20px;}
+body{font-family: "Times New Roman", Times, serif; font-size: 18px;}
+h1{font-family: "Arial", sans-serif; font-weight: bold; font-size: 40px;}
+h2{font-family: "Arial", sans-serif; font-weight: bold; font-size: 25px;}
+body{
+    margin: 0;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #009dd9;
+    top: 0;
+    left: 0;
+    height: 55px;
+    position:sticky; 
+    z-index: 1;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 1;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 8px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
