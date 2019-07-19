@@ -18,32 +18,28 @@
 <!-- TopNav -->
 <div class="topnav">
   <div class="search-container">
-    <form action="https://www.google.com/webhp?search=">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit">Search</button>
+    <form action="http://google.com/search" target="_blank">
+      <input type="text" placeholder="Google Search.." name="q">
+      <button type="submit" class="button3">Search</button>
     </form>
   </div>
 </div>
     
 <!-- Sidebar -->
-<div class="sidebar"><br>
-    <a href="index.html">
-       <img src="logo.png" alt="Big Data" width="250">
-    </a>
-    <div class="block-40">
-    <a href="order.html">Order</a> 
-</div>
-</div>
-
+<a href="index.html"><img class="sticky" src="logo.png" alt="Big Data"; >
+    <div id="navigation">        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>  
+    </div>
     
-<!-- Inline style -->
-<div class="main" style="margin-left:340px;margin-right:40px;padding-bottom: 500px">
+<div class="main">
 
   <!-- Header -->
-  <div class="header">
-    <h1><b>Order Form</b></h1>
-  </div>  
-
+  <div class="header">Order Form</div>  
+  <div class=output id="Submission"></div>  
 <!-- Content -->               
 <form name="orderform">
 <table>
@@ -71,7 +67,7 @@
             <label id="large">$100/hour</label>
         </td>
         <td>
-            <input class="input3" onfocus="quantFormat1()" oninput="getTotal()" id="quantity1" value='' maxlength="4" name="quantity1" required>
+            <input class="input3" onfocus="quantFormat1()" oninput="getTotal()" id="quantity1" value=1 maxlength="4" name="quantity1" required>
             
         </td>
     </tr>
@@ -83,7 +79,7 @@
             <label id="large">$200/hour</label>
         </td>
         <td>
-            <input class="input3" onfocus="quantFormat2()" oninput="getTotal()" id="quantity2" value='' maxlength="4" name="quantity2" required>
+            <input class="input3" onfocus="quantFormat2()" oninput="getTotal()" id="quantity2" value=1 maxlength="4" name="quantity2" required>
             
         </td>
     </tr>
@@ -120,7 +116,7 @@
             <label id="large">Credit Card Type</label>
             <select class="input1" id="cardType" name="cardType" required>
               <option value="" selected="selected">Select Card Type</option>
-              <option value="Visa">Visa</option>
+              <option value="Visa" >Visa</option> //move selected up a line
               <option value="Mastercard">Mastercard</option>
               <option value="American Express">American Express</option>
               <option value="Discover">Discover</option>
@@ -128,7 +124,7 @@
         </td>
         <td colspan="2">
             <label id="large">Credit Card Number</label>
-            <input class="input1" onclick="cardFormat()" onblur="validateCC(this.value)" id="CC" type="text" name="CC" required>
+            <input class="input1" onclick="cardFormat()" onblur="validateCC(this.value)" id="CC" type="text" name="CC"  required>
         </td>
         </tr>
             
@@ -137,7 +133,7 @@
             <label id="large">Expiration Month</label>
             <select class="input1" id="expMonth" name="expMonth" required>
               <option value="" selected="selected">Select a Month</option>
-              <option value="01">01</option>
+              <option value="01" >01</option>
               <option value="02">02</option>
               <option value="03">03</option>
               <option value="04">04</option>
@@ -155,7 +151,7 @@
             <label id="large">Expiration Year</label>
             <select class="input1" id="expYear" name="expYear" required>
               <option value="" selected="selected">Select a Year</option>
-              <option value="2019">2019</option>
+              <option value="2019" >2019</option>
               <option value="2020">2020</option>
               <option value="2021">2021</option>
               <option value="2022">2022</option>
@@ -169,6 +165,15 @@
             </select>
         </td>
         </tr>
+        <tr>
+            <td colspan="2"> 
+                <input class="input4" type="checkbox" id="savePayment" name="savePayment" checked>Save Payment information?
+            </td>
+            <td colspan="2"> 
+                <input class="input4" type="checkbox" id="useSavedPayment" name="useSavedPayment" onclick="getPaymentInfo()">Use Previously Saved Payment Information?
+            </td>
+            
+        </tr>
         <td>
         </td>
     </tr>
@@ -180,11 +185,11 @@
     <tr>
         <td colspan="2">
             <label id="large">First Name</label>
-            <input class="input1" onBlur="validateFirstName(this.value)" id="firstName" name="firstName" required>
+            <input class="input1" onBlur="validateFirstName(this.value)" id="firstName" name="firstName" value="Justin" required>
         </td>
         <td colspan="2">
             <label id="large">Last Name</label>
-            <input class="input1" onBlur="validateLastName(this.value)" id="lastName" name="lastName" required>
+            <input class="input1" onBlur="validateLastName(this.value)" id="lastName" name="lastName" value="Hurst" required>
         </td> 
 
     </tr>    
@@ -193,29 +198,29 @@
         
         <td colspan="2"> 
             <label id="large">Email</label>
-            <input class="input1" onBlur="validateEmail(this.value)" type="email" id="email" name="email" required>
+            <input class="input1" onBlur="validateEmail(this.value)" type="email" id="email" name="email" value="jhurst@gmail.com" required>
         </td>
         <td colspan="2">
             <label id="large">Phone Number</label>
-            <input class="input1" onfocus="phoneFormat()" onBlur="validatePhone(this.value)" id="phone" name="phone" required>
+            <input class="input1" onfocus="phoneFormat()" onBlur="validatePhone(this.value)" id="phone" name="phone" value="123-123-1234" required>
         </td>
     </tr> 
     <tr>
         <td colspan="4"> 
             <label id="large">Street Address</label>
-            <input class="input2" onBlur="validateStreet(this.value)" type="text" id="streetName1" name="streetName1" required>
+            <input class="input2" onBlur="validateStreet(this.value)" type="text" id="streetName1" name="streetName1" value="12 none rd" required>
         </td>
     </tr>
     <tr>
         <td colspan="2"> 
             <label id="large">City</label>
-            <input class="input1" onBlur="validateCity(this.value)" type="text" id="city" name="city" required>
+            <input class="input1" onBlur="validateCity(this.value)" type="text" id="city" name="city" value="Sugar Land" required>
         </td>
         <td> 
             <label id="large">State</label>
             <select class="input1" id="state" name="state" required>
-              <option value="" selected="selected">Select a State</option>
-              <option value="AL">Alabama</option>
+              <option value="" >Select a State</option>
+              <option value="AL" selected="selected">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
               <option value="AR">Arkansas</option>
@@ -270,26 +275,21 @@
         </td>
         <td> 
             <label id="large">Zip Code</label>
-            <input class="input1" onFocus="zipFormat()" onBlur="validateZip(this.value)" id="zip" name="zip" required>
+            <input class="input1" onFocus="zipFormat()" onBlur="validateZip(this.value)" id="zip" name="zip" value=77479 required>
         </td>
     </tr>
     <tr></tr>
     <tr>
         <td colspan="2"> 
-        <button type="button" onclick="resetPage()" class="button1">Clear</button>  
-        
+            <button type="button" id="clear" onclick="resetPage()" class="button1">Clear</button>  
         </td>
         <td colspan="2"> 
-        <button type="submit" onclick="submitForm()" class="button2">Submit</button>  
+            <button type="submit" id="submit" onclick="submitForm()" class="button2">Submit</button>  
         </td>
     </tr>        
 </table>
-</form>
-    
-        
-  </div>
-
-<!-- End page content -->
+</form> 
+</div>
 </div>
 
 </body>

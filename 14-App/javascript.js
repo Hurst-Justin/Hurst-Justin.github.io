@@ -1,5 +1,6 @@
 window.onload = resetForm()
 
+
 function getTotal() {
     document.getElementById("rush").checked = false;
     var theQuantity1 = Number(document.getElementById('quantity1').value);
@@ -186,10 +187,45 @@ function phoneFormat() {
 }
 
 function resetPage() {
+    location.reload();
+    resetLocalStorage();
+}
+
+function resetLocalStorage() {
+	window.localStorage.clear();
 	location.reload();
 }
 
-function submitForm() { 
-    // Display submit successful to the user in a popup window/alert.
-        alert("Submit Successful");
+function submitForm() {
+    var savePaymentBox = document.getElementById("savePayment");
+    if (savePaymentBox.checked == true){
+        var cardType = document.getElementById("cardType").value;
+        var ccNum = document.getElementById("CC").value;
+        var expMonth = document.getElementById("expMonth").value;
+        var expYear = document.getElementById("expYear").value;
+        var paymentInfo = {cardType: cardType, ccNum: ccNum, expMonth: expMonth, expYear: expYear};
+        localStorage.setItem('user', JSON.stringify(paymentInfo));      
+        document.getElementById("Submission").innerHTML = "<b>Submission successful!</b>";       
+    } 
+    else{
+        document.getElementById("Submission").innerHTML = "<b>Submission successful!</b>"; 
+    }
+
+}
+
+function getPaymentInfo() {    
+    var checkBox = document.getElementById("useSavedPayment");
+    var user = JSON.parse(localStorage.getItem('user'));
+    if (checkBox.checked == true){
+        document.getElementById("cardType").value =  user.cardType;
+        document.getElementById("CC").value =  user.ccNum;
+        document.getElementById("expMonth").value =  user.expMonth;
+        document.getElementById("expYear").value =  user.expYear;   
+    }
+    else{
+        document.getElementById("cardType").value =  '';
+        document.getElementById("CC").value =  '';
+        document.getElementById("expMonth").value =  '';
+        document.getElementById("expYear").value =  ''; 
+    }
 }
