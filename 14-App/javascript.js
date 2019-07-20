@@ -1,6 +1,5 @@
-window.onload = function() {
-    getLocation();
-  }
+window.onload = resetForm()
+
 
 function getTotal() {
     document.getElementById("rush").checked = false;
@@ -188,13 +187,13 @@ function phoneFormat() {
 }
 
 function resetPage() {
-    document.getElementById("location")ation.reload();
-    resetdocument.getElementById("location")alStorage();
+    location.reload();
+    resetLocalStorage();
 }
 
-function resetdocument.getElementById("location")alStorage() {
-	window.document.getElementById("location")alStorage.clear();
-	document.getElementById("location")ation.reload();
+function resetLocalStorage() {
+	window.localStorage.clear();
+	location.reload();
 }
 
 function submitForm() {
@@ -205,18 +204,17 @@ function submitForm() {
         var expMonth = document.getElementById("expMonth").value;
         var expYear = document.getElementById("expYear").value;
         var paymentInfo = {cardType: cardType, ccNum: ccNum, expMonth: expMonth, expYear: expYear};
-        document.getElementById("location")alStorage.setItem('user', JSON.stringify(paymentInfo));      
-        document.getElementById("Submission").innerHTML = "<b>Submission successful!</b>";       
+        localStorage.setItem('user', JSON.stringify(paymentInfo));                    
     } 
     else{
-        document.getElementById("Submission").innerHTML = "<b>Submission successful!</b>"; 
+        document.getElementById("Submission").innerHTML = "<b>Submission unsuccessful!</b>"; 
     }
 
 }
 
 function getPaymentInfo() {    
     var checkBox = document.getElementById("useSavedPayment");
-    var user = JSON.parse(document.getElementById("location")alStorage.getItem('user'));
+    var user = JSON.parse(localStorage.getItem('user'));
     if (checkBox.checked == true){
         document.getElementById("cardType").value =  user.cardType;
         document.getElementById("CC").value =  user.ccNum;
@@ -231,36 +229,3 @@ function getPaymentInfo() {
     }
 }
 
-
-// get location
-function getLocation() {
-    document.getElementById("location").innerHTML = "this worked"
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(position => {
-        getWeather(position.coords.latitude, position.coords.longitude);
-      });
-    } else {
-        document.getElementById("location").innerHTML = "Geolocation is not supported by this browser.";
-    }
-  }
-
-  // get weather data according to the location
-function getWeather(lat, long) {
-    const root = "https://fcc-weather-api.glitch.me/api/current?";
-    fetch(`${root}lat=${lat}&lon=${long}`, { method: "get" })
-      .then(resp => resp.json())
-      .then(data => {
-        updateDataToUI(data.name, data.weather, data.main.temp);
-      })
-      .catch(function(err) {
-        console.error(err);
-      });
-  }
-
-  // update the data from API to DOM
-function updateDataToUI(location, weather, temp) {
-    document.getElementById("weather-icon").innerHTML = `<img src="${weather[0].icon}" />`;
-    document.getElementById("weather-condition").innerHTML = weather[0].main;
-    document.getElementById("location").innerHTML = location;
-    document.getElementById("temperature-num").innerHTML = `${temp}`;
-  }
