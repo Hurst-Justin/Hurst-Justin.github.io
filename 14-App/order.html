@@ -67,7 +67,7 @@
             <label id="large">$100/hour</label>
         </td>
         <td>
-            <input class="input3" onfocus="quantFormat1()" oninput="getTotal()" id="quantity1" value=1 maxlength="4" name="quantity1" required>
+            <input class="input3" onfocus="quantFormat1()" oninput="getTotal()" id="quantity1" value='' maxlength="4" name="quantity1" required>
             
         </td>
     </tr>
@@ -79,7 +79,7 @@
             <label id="large">$200/hour</label>
         </td>
         <td>
-            <input class="input3" onfocus="quantFormat2()" oninput="getTotal()" id="quantity2" value=1 maxlength="4" name="quantity2" required>
+            <input class="input3" onfocus="quantFormat2()" oninput="getTotal()" id="quantity2" value='' maxlength="4" name="quantity2" required>
             
         </td>
     </tr>
@@ -185,11 +185,11 @@
     <tr>
         <td colspan="2">
             <label id="large">First Name</label>
-            <input class="input1" onBlur="validateFirstName(this.value)" id="firstName" name="firstName" value="Justin" required>
+            <input class="input1" onBlur="validateFirstName(this.value)" id="firstName" name="firstName" required>
         </td>
         <td colspan="2">
             <label id="large">Last Name</label>
-            <input class="input1" onBlur="validateLastName(this.value)" id="lastName" name="lastName" value="Hurst" required>
+            <input class="input1" onBlur="validateLastName(this.value)" id="lastName" name="lastName" required>
         </td> 
 
     </tr>    
@@ -198,29 +198,29 @@
         
         <td colspan="2"> 
             <label id="large">Email</label>
-            <input class="input1" onBlur="validateEmail(this.value)" type="email" id="email" name="email" value="jhurst@gmail.com" required>
+            <input class="input1" onBlur="validateEmail(this.value)" type="email" id="email" name="email" required>
         </td>
         <td colspan="2">
             <label id="large">Phone Number</label>
-            <input class="input1" onfocus="phoneFormat()" onBlur="validatePhone(this.value)" id="phone" name="phone" value="123-123-1234" required>
+            <input class="input1" onfocus="phoneFormat()" onBlur="validatePhone(this.value)" id="phone" name="phone" required>
         </td>
     </tr> 
     <tr>
         <td colspan="4"> 
             <label id="large">Street Address</label>
-            <input class="input2" onBlur="validateStreet(this.value)" type="text" id="streetName1" name="streetName1" value="12 none rd" required>
+            <input class="input2" onBlur="validateStreet(this.value)" type="text" id="streetName1" name="streetName1" required>
         </td>
     </tr>
     <tr>
         <td colspan="2"> 
             <label id="large">City</label>
-            <input class="input1" onBlur="validateCity(this.value)" type="text" id="city" name="city" value="Sugar Land" required>
+            <input class="input1" onBlur="validateCity(this.value)" type="text" id="city" name="city" required>
         </td>
         <td> 
             <label id="large">State</label>
             <select class="input1" id="state" name="state" required>
-              <option value="" >Select a State</option>
-              <option value="AL" selected="selected">Alabama</option>
+              <option value="" selected="selected">Select a State</option>
+              <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
               <option value="AR">Arkansas</option>
@@ -275,7 +275,7 @@
         </td>
         <td> 
             <label id="large">Zip Code</label>
-            <input class="input1" onFocus="zipFormat()" onBlur="validateZip(this.value)" id="zip" name="zip" value=77479 required>
+            <input class="input1" onFocus="zipFormat()" onBlur="validateZip(this.value)" id="zip" name="zip" required>
         </td>
     </tr>
     <tr></tr>
