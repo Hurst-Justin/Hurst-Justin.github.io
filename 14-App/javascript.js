@@ -1,6 +1,6 @@
 window.onload = function() {
-    getdocument.getElementById("location")ation();
-  };
+    getLocation();
+  }
 
 function getTotal() {
     document.getElementById("rush").checked = false;
@@ -231,20 +231,16 @@ function getPaymentInfo() {
     }
 }
 
-const loc = document.getElementById("location");
-const temNum = document.getElementById("temperature-num");
-const temScale = document.getElementById("temperature-scale");
-const weatherCon = document.getElementById("weather-condition");
-const weatherIcon = document.getElementById("weather-icon");
 
 // get location
 function getLocation() {
+    document.getElementById("location").innerHTML = "this worked"
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
         getWeather(position.coords.latitude, position.coords.longitude);
       });
     } else {
-      loc.innerHTML = "Geolocation is not supported by this browser.";
+        document.getElementById("location").innerHTML = "Geolocation is not supported by this browser.";
     }
   }
 
@@ -263,8 +259,8 @@ function getWeather(lat, long) {
 
   // update the data from API to DOM
 function updateDataToUI(location, weather, temp) {
-    weatherIcon.innerHTML = `<img src="${weather[0].icon}" />`;
-    weatherCon.innerHTML = weather[0].main;
-    loc.innerHTML = location;
-    temNum.innerHTML = `${temp}`;
+    document.getElementById("weather-icon").innerHTML = `<img src="${weather[0].icon}" />`;
+    document.getElementById("weather-condition").innerHTML = weather[0].main;
+    document.getElementById("location").innerHTML = location;
+    document.getElementById("temperature-num").innerHTML = `${temp}`;
   }
